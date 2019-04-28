@@ -54,4 +54,8 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.postImageView.af_setImage(withURL: urlConn!)
         return cell
     }
+    
+    @IBAction func onLogoutTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

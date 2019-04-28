@@ -168,6 +168,11 @@
                         <viewLayoutGuide key="safeArea" id="9iM-df-3Se"/>
                     </view>
                     <navigationItem key="navigationItem" id="Afg-pT-kqC">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="qf1-NN-MXN">
+                            <connections>
+                                <action selector="onLogoutTap:" destination="0uu-6T-VUV" id="iHz-q3-n6X"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="insta_camera_btn" id="gv0-kB-DFZ">
                             <connections>
                                 <segue destination="lgM-K1-Bc8" kind="presentation" id="xNQ-Ye-XWK"/>
