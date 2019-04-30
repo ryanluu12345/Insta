@@ -155,7 +155,7 @@
                                             <outlet property="postImageView" destination="jJw-ud-khY" id="xos-4E-6Qn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="commentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="57" id="TE1-Yz-mWg" customClass="CommentTableViewCell" customModule="Insta" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="commentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="57" id="TE1-Yz-mWg" customClass="CommentTableViewCell" customModule="Insta" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="422" width="375" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TE1-Yz-mWg" id="d2o-fX-wLu">
@@ -191,6 +191,28 @@
                                             <outlet property="nameLabel" destination="icO-JA-bZg" id="22Z-Zd-y7h"/>
                                             <outlet property="textLabel" destination="Hqo-zs-mpj" id="JJ5-z2-cfH"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCommentCell" id="ZO3-Rw-hIb">
+                                        <rect key="frame" x="0.0" y="479" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZO3-Rw-hIb" id="JPx-Q9-cXb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGU-N4-EMv">
+                                                    <rect key="frame" x="24" y="8" width="343" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WGU-N4-EMv" firstAttribute="leading" secondItem="JPx-Q9-cXb" secondAttribute="leading" constant="24" id="Se5-jK-bc6"/>
+                                                <constraint firstItem="WGU-N4-EMv" firstAttribute="top" secondItem="JPx-Q9-cXb" secondAttribute="top" constant="8" id="hwg-iR-nOJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="WGU-N4-EMv" secondAttribute="trailing" constant="8" id="qmJ-3x-Uf1"/>
+                                                <constraint firstAttribute="bottom" secondItem="WGU-N4-EMv" secondAttribute="bottom" constant="8" id="yce-gY-xM0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
