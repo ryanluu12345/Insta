@@ -18,6 +18,8 @@
 		09FD041022753279002F219B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD040F22753279002F219B /* CameraViewController.swift */; };
 		09FD045A227667DB002F219B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD0459227667DB002F219B /* PostTableViewCell.swift */; };
 		09FD04622277FC08002F219B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD04612277FC08002F219B /* CommentTableViewCell.swift */; };
+		09FD0464227829A7002F219B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD0463227829A7002F219B /* ProfileViewController.swift */; };
+		09FD046622782F12002F219B /* ProfileCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD046522782F12002F219B /* ProfileCameraViewController.swift */; };
 		2AEC77177884CEDDDE0225E4 /* Pods_InstaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0ADB0124C4FEA79147A5CF /* Pods_InstaUITests.framework */; };
 		379A123CCD9CE27856603420 /* Pods_InstaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5410609C4A1B683A1C7154 /* Pods_InstaTests.framework */; };
 		68FC2A47AFDC219E2F0CE805 /* Pods_Insta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D05840BD6C7DDE610ED476 /* Pods_Insta.framework */; };
@@ -60,6 +62,8 @@
 		09FD040F22753279002F219B /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		09FD0459227667DB002F219B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		09FD04612277FC08002F219B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		09FD0463227829A7002F219B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		09FD046522782F12002F219B /* ProfileCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCameraViewController.swift; sourceTree = "<group>"; };
 		0A0ADB0124C4FEA79147A5CF /* Pods_InstaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C97FD21008DA3A04AA44E7 /* Pods-InstaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaTests.release.xcconfig"; path = "Target Support Files/Pods-InstaTests/Pods-InstaTests.release.xcconfig"; sourceTree = "<group>"; };
 		39B74AD8FC61E04BFD258106 /* Pods-InstaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaUITests/Pods-InstaUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				096DC7652274EE740053EA12 /* LoginViewController.swift */,
 				096DC7672274EE850053EA12 /* FeedViewController.swift */,
 				09FD040F22753279002F219B /* CameraViewController.swift */,
+				09FD0463227829A7002F219B /* ProfileViewController.swift */,
+				09FD046522782F12002F219B /* ProfileCameraViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,8 +453,10 @@
 				09FD04622277FC08002F219B /* CommentTableViewCell.swift in Sources */,
 				09FD041022753279002F219B /* CameraViewController.swift in Sources */,
 				09FD045A227667DB002F219B /* PostTableViewCell.swift in Sources */,
+				09FD0464227829A7002F219B /* ProfileViewController.swift in Sources */,
 				096DC7682274EE850053EA12 /* FeedViewController.swift in Sources */,
 				096DC7342274EA1A0053EA12 /* AppDelegate.swift in Sources */,
+				09FD046622782F12002F219B /* ProfileCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if PFUser.current() != nil {
             let main = UIStoryboard(name: "Main", bundle: nil)
-            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+            let feedNavigationController = main.instantiateViewController(withIdentifier: "MainTabBarController")
             window?.rootViewController = feedNavigationController
         }
         return true
