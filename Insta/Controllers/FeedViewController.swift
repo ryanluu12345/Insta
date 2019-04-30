@@ -116,6 +116,14 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.commentTextLabel.text = comment["text"] as? String
             let user = comment["author"] as! PFUser
             cell.nameLabel.text = user.username!
+            if let userPhoto = user["profile_img"] {
+                let imageFile = userPhoto as! PFFileObject
+                let urlString = imageFile.url!
+                let urlConn = URL(string: urlString)
+                cell.profileImageView.af_setImage(withURL: urlConn!)
+            } else {
+                cell.profileImageView.image = UIImage(named: "image_placeholder")
+            }
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "addCommentCell")!

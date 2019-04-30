@@ -155,45 +155,56 @@
                                             <outlet property="postImageView" destination="jJw-ud-khY" id="xos-4E-6Qn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="commentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="57" id="TE1-Yz-mWg" customClass="CommentTableViewCell" customModule="Insta" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="422" width="375" height="57"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="commentCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="77" id="TE1-Yz-mWg" customClass="CommentTableViewCell" customModule="Insta" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="422" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TE1-Yz-mWg" id="d2o-fX-wLu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ryan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icO-JA-bZg">
-                                                    <rect key="frame" x="24" y="8" width="47.5" height="24"/>
+                                                    <rect key="frame" x="80" y="8" width="48" height="24"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Htc-rh-XfY">
+                                                    <rect key="frame" x="24" y="8" width="48" height="48"/>
+                                                    <color key="backgroundColor" red="0.87237013029999999" green="0.89803458479999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="AGh-a9-E4D"/>
+                                                        <constraint firstAttribute="width" constant="48" id="XTm-o9-efy"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a real comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqo-zs-mpj">
-                                                    <rect key="frame" x="79.5" y="19" width="172" height="19"/>
+                                                    <rect key="frame" x="136" y="8" width="172" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Hqo-zs-mpj" firstAttribute="leading" secondItem="icO-JA-bZg" secondAttribute="trailing" constant="8" id="2qT-Eb-1up"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Hqo-zs-mpj" secondAttribute="bottom" constant="8" id="FgF-PJ-8FK"/>
-                                                <constraint firstItem="icO-JA-bZg" firstAttribute="leading" secondItem="d2o-fX-wLu" secondAttribute="leading" constant="24" id="SWL-9B-5B1"/>
-                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Hqo-zs-mpj" secondAttribute="trailing" constant="8" id="fxx-XX-3lh"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="icO-JA-bZg" secondAttribute="bottom" constant="8" id="kCg-aE-YqN"/>
-                                                <constraint firstItem="icO-JA-bZg" firstAttribute="top" secondItem="d2o-fX-wLu" secondAttribute="top" constant="8" id="kGn-UM-pXz"/>
-                                                <constraint firstItem="Hqo-zs-mpj" firstAttribute="top" secondItem="d2o-fX-wLu" secondAttribute="topMargin" constant="8" id="rDZ-M5-cRu"/>
-                                                <constraint firstItem="Hqo-zs-mpj" firstAttribute="leading" secondItem="icO-JA-bZg" secondAttribute="trailing" constant="8" id="xad-h1-Aje"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hqo-zs-mpj" secondAttribute="trailing" constant="8" id="9aK-VB-k0D"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Htc-rh-XfY" secondAttribute="bottom" constant="8" id="AkF-PV-ffM"/>
+                                                <constraint firstItem="icO-JA-bZg" firstAttribute="leading" secondItem="Htc-rh-XfY" secondAttribute="trailing" constant="8" id="AzA-23-rYy"/>
+                                                <constraint firstItem="Hqo-zs-mpj" firstAttribute="leading" secondItem="icO-JA-bZg" secondAttribute="trailing" constant="8" id="KzY-hC-kuI"/>
+                                                <constraint firstItem="Hqo-zs-mpj" firstAttribute="top" secondItem="d2o-fX-wLu" secondAttribute="top" constant="8" id="R5x-Jz-X3i"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hqo-zs-mpj" secondAttribute="bottom" constant="8" id="Sxb-3r-Fu4"/>
+                                                <constraint firstItem="Htc-rh-XfY" firstAttribute="top" secondItem="d2o-fX-wLu" secondAttribute="top" constant="8" id="Xfx-os-Leb"/>
+                                                <constraint firstItem="Htc-rh-XfY" firstAttribute="leading" secondItem="d2o-fX-wLu" secondAttribute="leading" constant="24" id="fEr-jL-e1G"/>
+                                                <constraint firstItem="icO-JA-bZg" firstAttribute="top" secondItem="d2o-fX-wLu" secondAttribute="top" constant="8" id="hh0-qN-luh"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="icO-JA-bZg" secondAttribute="bottom" constant="8" id="mN4-cE-lf4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentTextLabel" destination="Hqo-zs-mpj" id="D6d-do-WU4"/>
                                             <outlet property="nameLabel" destination="icO-JA-bZg" id="22Z-Zd-y7h"/>
+                                            <outlet property="profileImageView" destination="Htc-rh-XfY" id="Eg9-RV-c7b"/>
                                             <outlet property="textLabel" destination="Hqo-zs-mpj" id="JJ5-z2-cfH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCommentCell" id="ZO3-Rw-hIb">
-                                        <rect key="frame" x="0.0" y="479" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="499" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZO3-Rw-hIb" id="JPx-Q9-cXb">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -244,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFx-GY-pV4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="955"/>
+            <point key="canvasLocation" x="925.60000000000002" y="954.87256371814101"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="I6b-av-i4p">
